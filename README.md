@@ -1,17 +1,15 @@
-# Prodigy Infotech Internship - Task 1
-## Responsive Landing Page
+## **C. Add Subtle Hover Effects**
+Inside `<style>` in `index.html`, add:
+```css
+.nav-links a:hover {
+  color: #ffcc00;
+  transition: color 0.3s ease;
+}
 
-This is a responsive landing page built as part of the **Prodigy Infotech Full Stack Internship**.
+.section1, .section2, .section3 {
+  transition: transform 0.3s ease;
+}
 
-### Features:
-- Fully responsive navigation bar with hamburger menu
-- Scroll-triggered navbar color change
-- Fade-in animations on section scroll
-- Single-page layout with smooth scrolling
-
-### How to Run:
-1. Download or clone this repository.
-2. Open `index.html` in your browser.
-
----
-**Internship Task:** Create a responsive landing page with modern design.
+.section1:hover, .section2:hover, .section3:hover {
+  transform: scale(1.02);
+}
